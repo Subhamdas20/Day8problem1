@@ -2,19 +2,12 @@ package com.bz.wagecalculation;
 import java.util.*;
 public class MonthlyWageCalculation {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter 1 for Full Time Wage Calculation\nEnter 2 for Part Time Wage Calculation");
-        int userInput = sc.nextInt();
-        int wageperhour = 20;
-        int hoursperday = 8;
-        int hoursparttime = hoursperday/2;
-        switch(userInput)
-        {
-            case 1:System.out.println("The Daily Wage of Employee = " + wageperhour * hoursperday + " Rs");
-                break;
-            case 2 :System.out.println("The Daily Wage of Part Time Employee = " + wageperhour * hoursparttime + " Rs");
-                break;
-            default : System.out.println("Invalid Input From user");
+        int wagePerHour = 20;
+        int hoursPerDay = 8;
+        int hoursPartTime = hoursPerDay/2;
+        int daysPerMonth = 20;
+        System.out.println("The Monthly Wage Full Time of Employee = " + wagePerHour*hoursPerDay*daysPerMonth + " Rs");
+        System.out.println("The Monthly Wage of Part Time Employee = " + wagePerHour*hoursPartTime*daysPerMonth + " Rs");
         }
     }
-}
+
