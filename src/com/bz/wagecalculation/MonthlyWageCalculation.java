@@ -1,6 +1,6 @@
 package com.bz.wagecalculation;
 import java.util.*;
-public class PartTimeWageCalculationUsingSwitch {
+public class MonthlyWageCalculation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter 1 for Full Time Wage Calculation\nEnter 2 for Part Time Wage Calculation");
