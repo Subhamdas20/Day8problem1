@@ -1,9 +1,9 @@
 package com.bz.wagecalculation;
 import java.util.*;
 public class RefractoredUsingMethods {
+    static int wagePerHour = 20;
+    static int hoursPerDay = 8;
     void CalculateMonthlyWageBasedOnTotalDaysOrTotalHours(int userInput , int workingDays , int hoursPerMonth){
-        int wagePerHour = 20;
-        int hoursPerDay = 8;
         if ((userInput == 1) & (workingDays <= 20))
             System.out.println("The Monthly Wage of Employee based on total working days=" + wagePerHour * hoursPerDay * workingDays + " Rs");
         else if ((userInput == 2) & (hoursPerMonth <= 100))
